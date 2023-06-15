@@ -378,3 +378,7 @@ while not done:
     elif choice == 0:
         print("Have a nice day!")
         done = True
+
+    else:
+        print("Sorry,Not a valid choice!")
+        continue
