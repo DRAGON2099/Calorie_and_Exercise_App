@@ -22,12 +22,12 @@ while not done:
     3) Add Snacks consumption
     4) Add Dinner consumption
     5) Add additional Food consumption
-    5) Visualize Progress as a pie chart
-    6) Visualize Progress as a bar chart
-    7) Visualize Progress as a line graph
-    8) Visualize Progress as numbers
-    9) BMI Calculator
-    10) Exercise Advisor
+    6) Visualize Progress as a pie chart
+    7) Visualize Progress as a bar chart
+    8) Visualize Progress as a line graph
+    9) Visualize Progress as numbers
+    10) BMI Calculator
+    11) Exercise Advisor
 
     0) Quit Menu
     ''')
