@@ -7,6 +7,7 @@ from lunch import lunch
 from snacks import snacks
 from dinner import dinner
 from addl_food import addl_food
+from bmi_calc import bmi_result
 
 #For calculations and data purposes the total of everything
 total_consumption = []
@@ -67,10 +68,42 @@ while not done:
         
         today_addl_food = addl_food()
 
+    #if sixth option i.e. Visualize progress as pie chart is chosen, this is implemented
+    elif choice == 6:
+        
+        pass    
+    
+    #if seventh option i.e. Visualize Progress as a bar chart is chosen, this is implemented
+    elif choice == 7:
+        
+        pass   
+    
+    #if eighth option i.e. Visualize Progress as a line graph is chosen, this is implemented
+    elif choice == 8:
+        
+        pass   
+    
+    #if ninth option i.e. Visualize Progress as numbers is chosen, this is implemented
+    elif choice == 9:
+        
+        pass   
+    
+    #if tenth option i.e. BMI Calculator is chosen, this is implemented
+    elif choice == 10:
+        
+        bmi_result()
+    
+    #if eleventh option i.e. Exercise Advisor is chosen, this is implemented
+    elif choice == 11:
+        
+        pass 
+    
+    #if option 0 or quit is chosen this is implemented
     elif choice == 0:
         print("Have a nice day!")
         done = True
     
+    #if any unvalid input is received for choice
     else:
         print("Sorry,Not a valid choice!")
         continue
