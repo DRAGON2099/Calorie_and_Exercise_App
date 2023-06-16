@@ -1,6 +1,3 @@
-#Packages needed 
-import matplotlib.pyplot as plt
-
 #importing the other python files
 from breakfast import breakfast
 from lunch import lunch
@@ -9,15 +6,14 @@ from dinner import dinner
 from addl_food import addl_food
 from bmi_calc import bmi_result
 from exercise import exercise
+from goals import goal
 
 #For calculations and data purposes the total of everything
 total_consumption = []
 
-#Initializing name_goal variables for the various composition of food
-calorie_goal = 0
-protein_goal = 0
-fat_goal = 0
-carbs_goal = 0
+print("First let us start with setting up goals for you")
+print()
+goal()
 
 done = False
 
