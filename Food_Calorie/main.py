@@ -8,6 +8,7 @@ from snacks import snacks
 from dinner import dinner
 from addl_food import addl_food
 from bmi_calc import bmi_result
+from exercise import exercise
 
 #For calculations and data purposes the total of everything
 total_consumption = []
@@ -95,8 +96,8 @@ while not done:
     
     #if eleventh option i.e. Exercise Advisor is chosen, this is implemented
     elif choice == 11:
-        
-        pass 
+
+        exercise()
     
     #if option 0 or quit is chosen this is implemented
     elif choice == 0:
