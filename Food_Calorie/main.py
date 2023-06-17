@@ -7,14 +7,17 @@ from addl_food import addl_food
 from bmi_calc import bmi_result
 from exercise import exercise
 from goals import goal
+from bar_graphs import bars
+from pie_graphs import pies
+from line_graphs import lines
+from number_crunch import numbers_data
 
 #For calculations and data purposes the total of everything
 total_consumption = []
 
 print("First let us start with setting up goals for you")
 print()
-goal()
-
+x,y,z,w = goal()
 done = False
 
 while not done:
@@ -68,22 +71,39 @@ while not done:
     #if sixth option i.e. Visualize progress as pie chart is chosen, this is implemented
     elif choice == 6:
         
-        pass    
+        cals = float(input("Please enter the total Calories burnt in the day : "))
+        proteins = float(input("Please enter the total Protein of the day : "))
+        fats = float(input("Please enter the total Fat of the day : "))
+        carbs = float(input("Please enter the total Carbs of the day : "))
+        pies(cals,x,proteins,y,fats,z,carbs,w)    
     
     #if seventh option i.e. Visualize Progress as a bar chart is chosen, this is implemented
     elif choice == 7:
         
-        pass   
+        #def bars(cal, cal_goal, protein, protein_goal, fats, fats_goal, carbs, carbs_goal):
+        cals = float(input("Please enter the total Calories burnt in the day : "))
+        proteins = float(input("Please enter the total Protein of the day : "))
+        fats = float(input("Please enter the total Fat of the day : "))
+        carbs = float(input("Please enter the total Carbs of the day : "))
+        bars(cals,x,proteins,y,fats,z,carbs,w)
     
     #if eighth option i.e. Visualize Progress as a line graph is chosen, this is implemented
     elif choice == 8:
         
-        pass   
+        cals = float(input("Please enter the total Calories burnt in the day : "))
+        proteins = float(input("Please enter the total Protein of the day : "))
+        fats = float(input("Please enter the total Fat of the day : "))
+        carbs = float(input("Please enter the total Carbs of the day : "))
+        lines(cals,x,proteins,y,fats,z,carbs,w)   
     
     #if ninth option i.e. Visualize Progress as numbers is chosen, this is implemented
     elif choice == 9:
         
-        pass   
+        cals = float(input("Please enter the total Calories burnt in the day : "))
+        proteins = float(input("Please enter the total Protein of the day : "))
+        fats = float(input("Please enter the total Fat of the day : "))
+        carbs = float(input("Please enter the total Carbs of the day : "))
+        numbers_data(cals,x,proteins,y,fats,z,carbs,w)  
     
     #if tenth option i.e. BMI Calculator is chosen, this is implemented
     elif choice == 10:
